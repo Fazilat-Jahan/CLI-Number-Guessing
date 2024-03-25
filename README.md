@@ -1,1 +1,1 @@
-# CLI-Number-Guessing: This game will generate a random number, and the player will have to guess that number.
+# Number-Guessing-Game: This game will generate a random number and the player will have maximum attempts to guess that number.

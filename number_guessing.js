@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let attempts;
 let maxAttempt = 5;
@@ -9,7 +10,7 @@ for (attempts = 1; attempts <= maxAttempt; attempts++) {
             message: "Please Guess a Number Between 1 to 6, you have only 5 maximum attempts: \t",
         }]);
     if (answer.UserGuessNum < 1 || answer.UserGuessNum > 6) {
-        console.log(`invalid number, please put number between 1 to 6`);
+        console.log(`\n invalid number, please put number between 1 to 6 \n`);
     }
     else if (answer.UserGuessNum === randomeNum) {
         console.log(`\n Congragulations! You Guess The Right Number ${randomeNum} in ${attempts} attemps. \n`);
@@ -18,6 +19,6 @@ for (attempts = 1; attempts <= maxAttempt; attempts++) {
         console.log(`\n Sorry! Your Guessing Number Is Wrong, Please Try Again. Your remaining attemps is ${maxAttempt - attempts}. \n`);
     }
     if (attempts == 5) {
-        console.log(`\n You reached your maximum attemps. The correct number is ${randomeNum}`);
+        console.log(`\n You reached your maximum attemps. The correct number was ${randomeNum} \n`);
     }
 }

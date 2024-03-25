@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 
 let attempts
@@ -11,7 +13,7 @@ const answer = await inquirer.prompt([{
     message: "Please Guess a Number Between 1 to 6, you have only 5 maximum attempts: \t",
 }])
 if (answer.UserGuessNum < 1 || answer.UserGuessNum > 6) {
-    console.log(`invalid number, please put number between 1 to 6`)
+    console.log(`\n invalid number, please put number between 1 to 6 \n`)
 }
 
 else if (answer.UserGuessNum === randomeNum){
@@ -22,6 +24,6 @@ else {
 }
 
 if (attempts == 5) {
-console.log(`\n You reached your maximum attemps. The correct number is ${randomeNum}`)
+console.log(`\n You reached your maximum attemps. The correct number was ${randomeNum} \n`)
 }
 }

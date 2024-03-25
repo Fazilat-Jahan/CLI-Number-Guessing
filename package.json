@@ -1,16 +1,15 @@
 {
-  "name": "online-random-number-guessing-game",
-  "version": "1.0.2",
+  "name": "random-number-guessing-game",
+  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "number_guessing.js",
   "type": "module",
-  "bin": {
-    "online-random--number-guessing-game": "number_guessing.js"},
+  "bin": "number_guessing.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fazilat Jahan",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "inquirer": "^9.2.16"
   },
